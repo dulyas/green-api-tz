@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: #d1d7db;
+  padding: 30px;
+}
+
+input, button, textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid #252525;
+  border-radius: 5px;
+  margin-block-end: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  resize: none;
+  &:not(:first-child) {
+      margin-block-end: 10px;
+  }
+}
+button {
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  
+  // border: none;
+  font: inherit;
+  color: inherit;
+}
+
+
+a {
+  text-decoration:none;
+  font: inherit;
+  color: inherit;
+} 
